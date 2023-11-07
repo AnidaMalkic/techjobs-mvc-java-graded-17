@@ -38,7 +38,9 @@
 
   <!-- TODO #4 - Loop over the search results to display all job fields. -->
 
-    <div th:replace="~{jobs :: jobList}"></div>
+<!--    <div th:fragment = "jobList" ></div>-->
+    <div th:replace = "~{list-jobs :: jobList}"></div>
+<!--    <div th:each="~{list-jobs :: jobList}"></div>-->
 
 <!--    <table th:each="job: ${jobs}" class = "job-listing">-->
 <!--        <tbody>-->
@@ -69,6 +71,5 @@
 <!--        </tbody>-->
 <!--    </table>-->
 </div>
-
 </body>
 </html>
